@@ -5,54 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <a class="global-logo" href="#">LOGO</a>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+<body class="container">
+    <header class="row">
+        <a class="column global-logo" href="#"><img src="assets/images/logo.svg" /></a>
+        <nav class="column">
+            <button><img src="assets/images/search.svg" />search</button>
+            <button><img src="assets/images/shopping_cart.svg" />cart</button>
         </nav>
     </header>
-    <section id="hero">
-        <h1>hero text</h1>
+    <section id="hero" class="row">
+        <div class="column hero-text">
+            <h1>vivid dreams,<br/> limitless possibilities.</h1>
+            <p>now enter our wonderland of slumber.</p>
+        </div>
+        <button class="column">Explore</button>
     </section>
 
-    <section id="features">
-        <div>
-            <img src="assets/images/">
-            <h1></h1>
-            <p></p>
+    <section id="features" class="row">
+        <div class="column">
+            <!--<p>midnight shadows</p>
+            <h1>lustrous liquid eyeshadow</h1>-->
+            <p>telescope</p>
+            <img src="assets/images/feature_1.png">
+            <button>$4.50</button>
         </div>
-        <div>
-            <img src="assets/images/">
-            <h1></h1>
-            <p></p>
+        <div class="column">
+            <p>milky way</p>
+            <img src="assets/images/feature_2.png">
+            <button>$4.50</button>
         </div>
-        <div>
-            <img src="assets/images/">
-            <h1></h1>
-            <p></p>
+        <div class="column">
+            <p>science fair</p>
+            <img src="assets/images/feature_3.png">
+            <button>$4.50</button>
         </div>
-        <div>
-            <img src="assets/images/">
-            <h1></h1>
-            <p></p>
+        <div class="column">
+            <p>comet</p>
+            <img src="assets/images/feature_4.png">
+            <button>$4.50</button>
         </div>
-
+        <div class="column">
+            <p>lab coat</p>
+            <img src="assets/images/feature_5.png">
+            <button>$4.50</button>
+        </div>
     </section>
+   
     <section id="call-to-action">
-        <h1></h1>
-        <p></p>
-        <button>Action</button>
+        <div class="column cta-img">
+            <img src="assets/images/rem-ch2-launch-metallic-gel-eyeshadow-banner-1440x1440_1200x.png" alt="ariana wearing metallic eyeshadow">
+        </div>
+        <div class="column cta-text">
+            <p>new</p>
+            <h1>metallic gel eyeshadow</h1>
+            <p>glimmer like a supernova with dreamy multidimensional, starlike pigments</p>
+            <button>Explore</button>
+        </div>
     </section>
     <section id="formulario">
+        <form action="#" id="myform">
+            <div class="row"><label>name</label><br/>
+                <input type="text" name="name" placeholder="your name">
+            </div>
+            <div class="row"><label>email address</label><br/>
+                <input type="email" name="email" placeholder="example@email.com">
+            </div>
+            <div class="row"> <label>gender</label><br/>
+                <select name="gender" id="gender" form="myform">
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Otro</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>comments</label><br/>
+                <textarea name""comments" placeholder="leave your comments"></textarea>
+            </div>
+    
+            <input class="row" type="submit">
+            <!--Nombre: name nombre,  type text
+Email: name email, type email
+Sexo: name sexo, type select - Options: Elegir (disabled) F, M, Otro
+Comentarios: name comentarios, type textarea
+Enviar: type submit
+Mensaje de gracias por enviar
+-->
+        </form>
     </section>
     <footer>
+        <p class="column">© forma beauty brands, llc 2022</p>
+        <div class="column social-media">
+            <a class="column"><img src="assets/images/brand_instagram.svg"/></a>
+            <a class="column"><img src="assets/images/brand_twitter.svg"/></a>
+            <a class="column"><img src="assets/images/brand_tiktok.svg"/></a>
+            <a class="column"><img src="assets/images/brand_youtube.svg"/></a>
+        </div>
     </footer>
 </body>
 

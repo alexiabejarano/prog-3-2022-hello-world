@@ -1,0 +1,207 @@
+@font-face {
+  font-family: Ivy;
+  src: url("../fonts/IvyMode_Regular.ttf");
+}
+
+@font-face {
+  font-family: Made;
+  src: url("../fonts/MADE_Light.ttf");
+}
+
+.container {
+  display: grid;
+  font-family: Ivy;
+  margin: 0;
+  color: #202020;
+}
+
+.global-logo img {
+  width: 251px;
+}
+
+button
+{
+  background-color: inherit;
+  border: none;
+  font-family: Made;
+  cursor: pointer;
+}
+
+header button {
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+header button img {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+header {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1.5rem 3rem;
+}
+
+nav {
+  justify-self: end;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-image: url("../images/D_1705_Launch_1_2600x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  min-height: 77vh;
+  padding: 3rem;
+}
+
+#hero button
+{
+  align-self: end;
+  border: 1px solid #fff;
+  color: #fff;
+  justify-self: end;
+  padding: 1rem 2rem;
+}
+
+.hero-text
+{
+  align-self: end;
+}
+
+.hero-text h1
+{
+  font-size: 2rem;
+}
+
+#features {
+  background-color: #eaeeef;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 0.7rem;
+
+}
+
+#features div
+{
+  display: grid;
+}
+
+#features p
+{
+  font-size: 1rem;
+}
+
+#features button
+{
+  justify-self: end;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+#features div 
+{
+  border: 1px solid #fff;
+  padding: 1rem;
+}
+
+#features img
+{
+  width: 100%;
+  transition: 1s transform ease-out;
+}
+
+#features img:hover
+{
+  transform: translateY(-10px);
+}
+
+#call-to-action
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  max-height: 50vw;
+}
+
+.cta-img img
+{
+  max-width: 50vw;
+}
+.cta-text
+{
+  padding: 2rem 3rem 3rem 4rem;
+}
+.cta-text button 
+{
+  border: 1px solid #000;
+  padding: 1rem 2rem;
+}
+
+#formulario
+{
+  background-color: #eaeeef;
+  font-family: Made;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  padding: 3rem 0;
+}
+
+#formulario div
+{
+  background-color: #fff;
+  width: 33.33vw;
+  padding: 1rem;
+}
+
+#formulario input, textarea, select
+{
+  border: none;
+  background-color: inherit;
+}
+
+#myform
+{
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 1rem;
+  justify-items: center;
+}
+
+#myform input[type="submit"]
+{
+  border: 1px solid #000;
+  color: #000;
+  font-family: Made;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  padding: 0.5rem 4rem;
+}
+
+footer
+{
+  background-color: #e4e3e2;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  font-family: Made;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.social-media
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-self: end;
+}
