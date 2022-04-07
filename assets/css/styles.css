@@ -138,6 +138,7 @@ nav {
 .cta-text
 {
   padding: 2rem 3rem 3rem 4rem;
+  font-size: 1.3rem;
 }
 .cta-text button 
 {
@@ -157,17 +158,30 @@ nav {
 #formulario div
 {
   background-color: #fff;
-  width: 33.33vw;
-  padding: 1rem;
+}
+
+#formulario label
+{
+  position: relative;
+  top: 0.7rem;
+  left: 0.7rem;
 }
 
 #formulario input, textarea, select
 {
   border: none;
   background-color: inherit;
+  width: 33.33vw;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-#myform
+textarea
+{
+  resize: none;
+}
+
+#main_form
 {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
@@ -175,7 +189,7 @@ nav {
   justify-items: center;
 }
 
-#myform input[type="submit"]
+#main_form input[type="submit"]
 {
   border: 1px solid #000;
   color: #000;
@@ -185,6 +199,13 @@ nav {
   letter-spacing: 0.2em;
   font-weight: bold;
   padding: 0.5rem 4rem;
+}
+
+#main_form input[type="submit"]:active
+{
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #000  ;
 }
 
 footer
